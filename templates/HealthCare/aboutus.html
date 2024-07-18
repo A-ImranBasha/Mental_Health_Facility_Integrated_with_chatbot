@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>About Us</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style media="screen">
+    body {
+      background-color: #f0f0f0; /* Light gray background color */
+      font-family: 'Arial', sans-serif; /* Change font to Arial */
+      color: #333; /* Dark text color */
+    }
+
+    .jumbotron {
+      margin-top: 20px;
+      margin-bottom: 20px;
+      background-color: #000; /* Black background color */
+      padding: 20px;
+      border-radius: 10px;
+      color: #000; /* Black text color */
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Text shadow for better readability */
+    }
+
+    .jumbotron h1 {
+      font-size: 36px;
+      text-align: center;
+      text-transform: uppercase;
+      color: rgba(0, 0, 0, 0.7); /* Light black text color */
+      font-weight: bold; /* Bold font */
+    }
+
+    .jumbotron p {
+      font-size: 18px;
+      line-height: 1.6;
+    }
+
+    .btn-success {
+      background-color: #4CAF50; /* Green button background color */
+      border-color: #4CAF50; /* Green button border color */
+    }
+
+    .btn-success:hover {
+      background-color: #45a049; /* Darker green on hover */
+      border-color: #45a049; /* Darker green border on hover */
+    }
+
+    footer {
+      background-color: #333; /* Dark background color for footer */
+      color: #fff; /* White text color for footer */
+      padding: 20px 0;
+      text-align: center;
+    }
+
+    footer p {
+      margin-bottom: 0;
+    }
+  </style>
+</head>
+
+<body>
+  {% include "HealthCare/navbar.html" %}
+  <br><br>
+  <div class="container">
+    <div class="jumbotron">
+      <h1 class="display-4">Mental Health Facility with Chatbot</h1>
+      <br>
+      <p>
+        Welcome to our Mental Health Facility with Chatbot, your trusted partner in managing mental health services. Our mission is to provide
+        advanced and comprehensive mental healthcare solutions to patients, therapists, and administrators.
+      </p>
+      <p>
+        At our facility, we believe in seamless mental healthcare management that empowers both patients and mental
+        health professionals. Our platform offers efficient appointment scheduling, patient records management, and streamlined
+        communication between therapists and patients.
+      </p>
+      <p>
+        Our team consists of dedicated professionals from both mental healthcare and technology backgrounds. We understand
+        the unique challenges faced by mental healthcare facilities and aim to address them through innovative solutions.
+        Whether you're a patient seeking quality mental health care or a therapist looking to enhance your practice,
+        our Mental Health Facility with Chatbot is here to make your experience smooth, efficient, and secure.
+      </p>
+
+      <hr class="my-4">
+      <p>Explore our website:</p>
+      <p class="lead">
+        <a class="btn btn-success btn-lg" href="/" role="button">HOME</a>
+      </p>
+    </div>
+  </div>
+  {% include "HealthCare/footer.html" %}
+</body>
+
+</html>

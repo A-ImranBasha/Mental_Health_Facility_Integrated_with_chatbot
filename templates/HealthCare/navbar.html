@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+  <style type="text/css">
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+    .bs-example {
+      margin: 0px;
+    }
+
+    .navbar-brand {
+      font-size: 24px;
+      font-family: 'Montserrat', sans-serif; /* Change font to Montserrat */
+      color: #fff;
+      text-shadow: 2px 2px 4px #000000;
+    }
+
+    .navbar-nav .nav-link {
+      color: #fff;
+      font-size: 18px;
+      font-weight: bold;
+      text-transform: uppercase;
+      margin-left: 20px;
+      font-family: 'Montserrat', sans-serif; /* Change font to Montserrat */
+      transition: color 0.3s, transform 0.3s; /* Smooth transition for color change and transform */
+    }
+
+    .navbar-dark {
+      background-color: #333; /* Dark background color */
+    }
+
+    .navbar-nav .nav-link:hover {
+      color: #fff; /* Change color on hover */
+      transform: scale(1.1); /* Scale effect on hover */
+    }
+
+    .navbar-toggler {
+      border-color: #fff; /* White color for the toggler icon */
+    }
+
+    .navbar-toggler-icon {
+      background-color: #fff; /* White color for the toggler icon */
+    }
+
+    /* Animation for the navbar */
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+
+    .navbar-nav .nav-link {
+      animation: fadeIn 1s ease-in-out; /* Apply fade-in animation */
+    }
+  </style>
+</head>
+
+<body>
+  <div class="bs-example">
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top">
+      <a href="/" class="navbar-brand">Mental Health Care Facility</a>
+      <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+        <div class="navbar-nav">
+          <a href="/adminclick" class="nav-item nav-link">Admin</a>
+          <a href="/doctorclick" class="nav-item nav-link">Doctor</a>
+          <a href="/patientclick" class="nav-item nav-link">Patient</a>
+        </div>
+        <div class="navbar-nav">
+          <a href="/aboutus" class="nav-item nav-link">About Us</a>
+          <a href="/contactus" class="nav-item nav-link">Contact Us</a>
+        </div>
+      </div>
+    </nav>
+  </div>
+</body>
+
+</html>

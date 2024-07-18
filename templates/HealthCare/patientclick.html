@@ -1,0 +1,80 @@
+{% extends 'HealthCare/homebase.html' %}
+{% load static %}
+{% block content %}
+<style>
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+    font-family: arial;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center the content horizontally */
+  }
+
+  .title {
+    color: grey;
+    font-size: 18px;
+  }
+
+  button {
+    border: none;
+    outline: 0;
+    padding: 8px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+    margin-top: 10px; /* Add some spacing between image and button */
+  }
+
+  button:hover,
+  a:hover {
+    opacity: 0.7;
+  }
+
+  .grid-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+  }
+
+  a:link {
+    text-decoration: none;
+  }
+
+  a {
+    color: white;
+  }
+  .footer {
+    margin-top: 0;
+  }
+</style>
+
+
+<div class="jumbotron" style="margin-bottom:0px;">
+  <h1 class="display-4" style="text-align:center;"><b>Welcome! Patient</b></h1>
+  <p class="lead">Welcome to Mental HealthCare Facility Management </p>
+  <hr class="my-4">
+</div>
+
+<div class="grid-item">
+  <div class="card">
+    <img src="{% static "images/patient.jpg" %}" alt="John" style="width:100%">
+    <p class="title">PATIENT</p>
+  </div>
+</div>
+
+<div>
+  <p>You can access various features after Login/SignUp.</p>
+  <p class="lead">
+    <a class="btn btn-primary btn-lg" href="/patientsignup" role="button">Register</a>
+    <a class="btn btn-success btn-lg" href="/patientlogin" role="button">Login</a>
+  </p>
+</div>
+
+{% endblock content %}

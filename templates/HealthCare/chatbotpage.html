@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mental Health Chatbot</title>
+    <!-- Include Botpress Web Chat scripts -->
+    <script src="https://cdn.botpress.cloud/webchat/v1/inject.js"></script>
+    <script src="https://mediafiles.botpress.cloud/38c99ede-516f-4d1d-bbfe-4c4cdd8eea3f/webchat/config.js" defer></script>
+    <style> 
+        body {
+            margin: 0;
+            padding: 0;
+        }
+        .sanju {
+            position: fixed;
+            bottom: 0;
+            right: 0;
+            width: 100vw;
+            height: 100vh;
+            background-image: url('static/images/chatt.jpg');
+            background-size: cover;
+            background-position: center;
+            overflow: hidden;
+        }
+        h1 {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 1; /* Ensure the heading is above other elements */
+            color: #fff; /* Text color for visibility */
+        }
+    </style>
+</head>
+<body>
+    <h1 style="color: black;">Mental Health Chatbot</h1>
+    <div class="sanju">
+        <script>
+            const chatWidget = document.createElement('div');
+            chatWidget.setAttribute('class', 'bp-widget');
+            chatWidget.setAttribute('bp-widget-id', '38c99ede-516f-4d1d-bbfe-4c4cdd8eea3f'); // Replace 'your-widget-id' with your actual Botpress widget ID
+            document.body.appendChild(chatWidget);
+        </script>
+    </div>
+</body>
+</html>
